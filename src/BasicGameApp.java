@@ -5,7 +5,7 @@ public class BasicGameApp {
     public Dealer D;
 
     public static void main(String[] args) {
-        
+
     }
 
 
