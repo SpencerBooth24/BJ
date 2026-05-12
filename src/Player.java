@@ -6,6 +6,13 @@ public class Player {
 
     Card [] hand;
 
+    Player(int pCardTotal,Boolean pIsBust,Boolean pIsHit, String pName){
+        pCardTotal=cardTotal;
+        pIsBust=isBust;
+        pName=name;
+        pIsHit=isHit;
+    }
+
     public void hit(){
 
     }

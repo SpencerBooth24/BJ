@@ -3,8 +3,16 @@ public class Card {
     public int value;
     public String name;
 
-public Card(String pSuit,int pValue,int pName){
-    suit=pSuit;
+public Card(int pSuit,int pValue,int pName){
+    if (pSuit==0){
+        suit="Hearts";
+    } else if (pSuit==1) {
+        suit="Diamonds";
+    } else if (pSuit==2) {
+        suit="Spades";
+    } else if (pSuit==3) {
+        suit="Clubs";
+    }
     value=pValue;
     //name=pName;
     if(pName==0){
@@ -47,7 +55,6 @@ public Card(String pSuit,int pValue,int pName){
         name="King";
         value=10;
     }
-    printInfo();
 }
 
 public void printInfo(){
