@@ -4,7 +4,7 @@ public class Player {
     public Boolean isHit;
     public String name;
 
-    Card [] hand;
+    Card [] hand;//object
 
     Player(int pCardTotal,Boolean pIsBust,Boolean pIsHit, String pName){
         pCardTotal=cardTotal;
