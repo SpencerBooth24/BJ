@@ -32,12 +32,17 @@ public class BasicGameApp {
         me.hand[1]=deck[1];
         me.calculateTotal();
 
+        d.hand[0]=deck[0];
+        d.hand[1]=deck[1];
+        d.calculateTotal();
+
         Scanner s = new Scanner(System.in);
         System.out.println("What is your name?");
         String name = s.nextLine();
         System.out.println(name);
         me.name=name;
         me.printInfo();
+        d.printInfo();
     }
 
     public void printDeck(){
